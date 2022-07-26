@@ -1,7 +1,51 @@
 .main-background {
     position: absolute;
-    height: 300px;
+    height: 250px;
     width: 100%;
     z-index: -1;
     background-color: #033E5E;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.profile-content .profile-card-container {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.profile-content .profile-card {
+    z-index: 1;
+    width: 60%;
+    height: 82%;
+    background-color: white;
+    filter: drop-shadow(2px 2px 2px rgb(182, 182, 182));
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.profile-content .empty-space {
+    height: 250px;
+    display: block;
+}
+
+.profile-section {
+    height: 500px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile-content .profile-card {
+        z-index: 1;
+        width: 95%;
+        height: 90%;
+        background-color: white;
+        filter: drop-shadow(2px 2px 2px rgb(182, 182, 182));
+        border-radius: 3%;
+        padding: 10px;
+    }
 }

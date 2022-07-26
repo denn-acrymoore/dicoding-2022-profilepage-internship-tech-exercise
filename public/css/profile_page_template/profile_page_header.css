@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.dicoding-navbar-col-align-left {
+.dicoding-navbar .dicoding-navbar-col-align-left {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -14,7 +14,7 @@
     justify-content: flex-start;
 }
 
-.dicoding-navbar-col-align-right {
+.dicoding-navbar .dicoding-navbar-col-align-right {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -22,35 +22,35 @@
     justify-content: flex-end;
 }
 
-.dicoding-navbar-logo {
+.dicoding-navbar .dicoding-navbar-logo {
     width: 100px;
 }
 
-.academy-dropdown {
+.dicoding-navbar .academy-dropdown {
     margin-left: 20px;
 }
 
-.academy-dropbtn {
+.dicoding-navbar .academy-dropbtn {
     font-size: smaller;
     padding: 28px;
     font-size: 16px;
     border: none;
 }
 
-.academy-dropdown-content {
+.dicoding-navbar .academy-dropdown-content {
     display: block;
     visibility: hidden;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    z-index: 1;
+    z-index: 2;
     transform-origin: top center;
     transition: all 300ms ease-in-out;
     opacity: 0;
     transform: translateY(-5px);
 }
 
-.academy-dropdown-content a {
+.dicoding-navbar .academy-dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -58,55 +58,55 @@
     font-size: smaller;
 }
 
-.academy-dropdown:hover .academy-dropdown-content {
+.dicoding-navbar .academy-dropdown:hover .academy-dropdown-content {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
 }
 
-.academy-dropdown:hover .academy-dropbtn {
+.dicoding-navbar .academy-dropdown:hover .academy-dropbtn {
     background-color: #ddd;
 }
 
-.academy-dropdown-content a:hover {
+.dicoding-navbar .academy-dropdown-content a:hover {
     background-color: #ddd;
 }
 
-.caret-dropdown {
+.dicoding-navbar .caret-dropdown {
     transition: all 300ms ease-in-out;
     width: 10px;
 }
 
-.academy-dropdown:hover .caret-dropdown {
+.dicoding-navbar .academy-dropdown:hover .caret-dropdown {
     transform: rotate(180deg);
 }
 
-.avatar-img {
+.dicoding-navbar .avatar-img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-right: 5px;
 }
 
-.avatar-dropbtn {
+.dicoding-navbar .avatar-dropbtn {
     padding: 15px;
     border: none;
 }
 
-.avatar-dropdown-content {
+.dicoding-navbar .avatar-dropdown-content {
     display: block;
     visibility: hidden;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    z-index: 1;
+    z-index: 2;
     transform-origin: top center;
     transition: all 300ms ease-in-out;
     opacity: 0;
     transform: translateY(-5px);
 }
 
-.avatar-dropdown-content a {
+.dicoding-navbar .avatar-dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -114,40 +114,47 @@
     font-size: smaller;
 }
 
-.avatar-dropdown:hover .avatar-dropbtn {
+.dicoding-navbar .avatar-dropdown:hover .avatar-dropbtn {
     background-color: #ddd;
 }
 
-.avatar-dropdown:hover .caret-dropdown {
+.dicoding-navbar .avatar-dropdown:hover .caret-dropdown {
     transform: rotate(180deg);
 }
 
-.avatar-dropdown:hover .avatar-dropdown-content {
+.dicoding-navbar .avatar-dropdown:hover .avatar-dropdown-content {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
 }
 
-.avatar-dropdown-content a:hover {
+.dicoding-navbar .avatar-dropdown-content a:hover {
     background-color: #ddd;
 }
 
-.bell-logo {
+.dicoding-navbar .bell-logo {
     width: 30px;
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.bell-link:hover {
+.dicoding-navbar .bell-link:hover {
     filter: brightness(50%);
 }
 
-.dashboard-link {
+.dicoding-navbar .vertical-line {
+    border-left: 1px solid gray;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 22px;
+}
+
+.dicoding-navbar .dashboard-link {
     text-decoration: none;
 }
 
-.dashboard-btn {
+.dicoding-navbar .dashboard-btn {
     border: none;
     padding: 10px 15px;
     background-color: #1e3752;
@@ -159,11 +166,11 @@
     justify-content: flex-start;
 }
 
-.dashboard-btn:hover {
+.dicoding-navbar .dashboard-btn:hover {
     background-color: #1e2832;
 }
 
-.dashboard-btn-icon {
+.dicoding-navbar .dashboard-btn-icon {
     width: 20px;
     height: 20px;
     margin-left: 5px;

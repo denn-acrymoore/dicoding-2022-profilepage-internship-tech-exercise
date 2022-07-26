@@ -27,11 +27,12 @@
         <a class="bell-link" href="/">
             <img class="bell-logo" src={{ asset('images/bell_icon.svg') }}>
         </a>
+        <div class="vertical-line"></div>
         <a class="dashboard-link" href="/">
-            <button class="dashboard-btn">
+            <div class="dashboard-btn">
                 Dashboard
                 <img class="dashboard-btn-icon" src="{{ asset('images/home_icon.svg') }}">
-            </button>
+            </div>
         </a>
     </div>
 </nav>
