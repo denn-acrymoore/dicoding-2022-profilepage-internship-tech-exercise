@@ -1,0 +1,7 @@
+.main-background {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    background-color: #033E5E;
+}
