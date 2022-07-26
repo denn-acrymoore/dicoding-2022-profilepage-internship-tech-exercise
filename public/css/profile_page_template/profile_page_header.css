@@ -1,6 +1,5 @@
 .dicoding-navbar {
     height: 80px;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -8,7 +7,6 @@
 }
 
 .dicoding-navbar-col-align-left {
-    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -17,7 +15,6 @@
 }
 
 .dicoding-navbar-col-align-right {
-    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -35,7 +32,7 @@
 
 .academy-dropbtn {
     font-size: smaller;
-    padding: 16px;
+    padding: 28px;
     font-size: 16px;
     border: none;
 }
@@ -92,10 +89,7 @@
 }
 
 .avatar-dropbtn {
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 0px;
-    padding-bottom: 16px;
+    padding: 15px;
     border: none;
 }
 
@@ -118,6 +112,10 @@
     text-decoration: none;
     display: block;
     font-size: smaller;
+}
+
+.avatar-dropdown:hover .avatar-dropbtn {
+    background-color: #ddd;
 }
 
 .avatar-dropdown:hover .caret-dropdown {
