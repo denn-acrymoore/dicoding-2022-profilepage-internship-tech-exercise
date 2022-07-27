@@ -23,6 +23,11 @@ function previewProfileImg(event) {
     }
 }
 
+function showModal() {
+    const modal = new bootstrap.Modal('#editProfileModal');
+    modal.show();
+}
+
 // - Run this function once to calculate the initial input length of the textarea
 // - This function will also be run when "onkeyup" event is triggered.
 textAreaCounter();
