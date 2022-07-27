@@ -21,12 +21,77 @@
 
 .profile-content .profile-card {
     z-index: 1;
-    width: 60%;
-    height: 82%;
+    min-width: 55%;
     background-color: white;
     filter: drop-shadow(2px 2px 2px rgb(182, 182, 182));
     border-radius: 3%;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile-content .profile-card {
+        width: 95%;
+    }
+}
+
+.profile-content .profile-card-avatar {
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    max-width: 100px;
+    max-height: 100px;
+    border: 2px solid white;
+    outline: 3.5px solid rgb(39, 171, 186)
+}
+
+.profile-content .profile-card-name {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.profile-content .profile-card-headline {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+.profile-content .edit-profile-btn {
+    margin-top: 12px;
+    border: 1px solid rgb(217, 217, 217);
+    background-color: white;
+    font-size: 0.85rem;
+    padding: 5px 18px;
+    transition: all 100ms ease-in-out;
+}
+
+.profile-content .edit-profile-btn:hover {
+    background-color: rgb(217, 217, 217);;
+}
+
+.profile-content .profile-card-exp-container {
+    margin-top: 17px;
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.profile-content .profile-card-joindate-container {
+    margin-top: 3px;
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.profile-card .profile-card-city-container {
+    margin-top: 3px;
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 100%;
 }
 
 .profile-content .empty-space {
@@ -36,16 +101,48 @@
 
 .profile-section {
     height: 500px;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .profile-content .profile-card {
-        z-index: 1;
-        width: 95%;
-        height: 90%;
-        background-color: white;
-        filter: drop-shadow(2px 2px 2px rgb(182, 182, 182));
-        border-radius: 3%;
-        padding: 10px;
-    }
+/* ======= MODAL CSS ======= */
+.modal .edit-profile-submit-btn {
+    border-radius: 0;
+    background-color: #033E5E;
+    color: white;
+    border: none;
+}
+
+.modal .edit-profile-submit-btn:hover {
+    background-color: #00131d;;
+}
+
+.modal .form-text {
+    font-size: 0.7rem;
+}
+
+.modal label {
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.modal .tentang-saya-counter {
+    float: right;
+}
+
+.modal .profile-img-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal .profile-img-form-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.modal .profile-img-form-div {
+    margin-left: 20px;
 }
