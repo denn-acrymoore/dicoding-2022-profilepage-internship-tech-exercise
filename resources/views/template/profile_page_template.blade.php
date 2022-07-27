@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="{{ asset('css/profile_page_template/profile_page_footer.css') }}">
 
   <script src="{{ asset('js/profile_page.js') }}" defer></script>
-  <script src="{{ asset('js/profile_page_show_modal.js') }}" defer></script>
+  
+  {{-- Note: Call this JavaScript file to show modal when page is loaded. --}}
+  {{-- <script src="{{ asset('js/profile_page_show_modal.js') }}" defer></script> --}}
 </head>
 <body>
   {{-- Note: asset() -> website domain + filename --}}

@@ -1,0 +1,23 @@
+.dicoding-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dicoding-footer .horizontal-line {
+    width: 70vw;
+    border-top: 2px solid rgb(225, 225, 225);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.dicoding-footer .dicoding-logo {
+    width: 120px;
+}
+
+.dicoding-footer .alamat-dicoding-div {
+    font-size: 0.9rem;
+    color: rgb(106, 106, 106);
+}

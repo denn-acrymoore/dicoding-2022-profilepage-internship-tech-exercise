@@ -4,7 +4,7 @@
         <div class="academy-dropdown">
             <div class="academy-dropbtn">
                 Academy
-                <img class="caret-dropdown" src="{{ asset('images/caret_icon.svg') }}" />
+                <img class="caret-dropdown" src="{{ asset('images/header/caret_icon.svg') }}" />
             </div>
             <div class="academy-dropdown-content">
                 <a href="/">Progress Belajar</a>
@@ -16,7 +16,7 @@
         <div class='avatar-dropdown'>
             <div class="avatar-dropbtn">
                 <img class="avatar-img" src="{{ asset('database-images/gigachad.jpg') }}" >
-                <img class="caret-dropdown" src="{{ asset('images/caret_icon.svg') }}" />
+                <img class="caret-dropdown" src="{{ asset('images/header/caret_icon.svg') }}" />
             </div>
             <div class="avatar-dropdown-content">
                 <a href="/">Daftar Pesanan</a>
@@ -25,13 +25,13 @@
             </div>
         </div>
         <a class="bell-link" href="/">
-            <img class="bell-logo" src={{ asset('images/bell_icon.svg') }}>
+            <img class="bell-logo" src={{ asset('images/header/bell_icon.svg') }}>
         </a>
         <div class="vertical-line"></div>
         <a class="dashboard-link" href="/">
             <div class="dashboard-btn">
                 Dashboard
-                <img class="dashboard-btn-icon" src="{{ asset('images/home_icon.svg') }}">
+                <img class="dashboard-btn-icon" src="{{ asset('images/header/home_icon.svg') }}">
             </div>
         </a>
     </div>
