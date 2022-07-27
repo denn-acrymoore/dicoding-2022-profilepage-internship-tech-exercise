@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('template.profile_page_template');
+    return redirect('/profile-page/academy');
 });
+
+Route::get('/profile-page/academy', [ProfileController::class, 'profilePageAcademy'])
+    ->name('profile-academy');
+Route::get('/profile-page/event', [ProfileController::class, 'profilePageEvent'])
+    ->name('profile-event');
+Route::get('/profile-page/challenge', [ProfileController::class, 'profilePageChallenge'])
+    ->name('profile-challenge');
+Route::get('/profile-page/winning-app', [ProfileController::class, 'profilePageWinningApp'])
+    ->name('profile-winning-app');

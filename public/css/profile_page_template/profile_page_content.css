@@ -1,3 +1,4 @@
+/* ======= MAIN CSS ======= */
 .main-background {
     position: absolute;
     height: 250px;
@@ -124,8 +125,44 @@
 }
 
 .profile-section {
-    height: 500px;
     padding: 20px;
+}
+
+/* ======= MINI NAVBAR CSS ======= */
+.profile-content .mini-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+}
+
+.profile-content a {
+    width: 100%;
+    max-width: 100px;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-weight:500;
+}
+
+.profile-content .mini-navbar-item {
+    text-align: center;
+    padding: 5px;
+}
+
+.profile-content .mini-navbar-item:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.profile-content .mini-navbar-item-number {
+    color: rgb(171, 171, 171);
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.profile-content .active {
+    background-color: rgb(242, 242, 242);
 }
 
 /* ======= MODAL CSS ======= */

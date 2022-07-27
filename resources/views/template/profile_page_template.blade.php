@@ -24,10 +24,13 @@
 </head>
 <body>
   {{-- Note: asset() -> website domain + filename --}}
-  {{-- @dd(asset('test')) --}}  
+  {{-- @dd(asset('test.jpeg'))   --}}
   
   {{-- Note: public() -> public folder directory + filename --}}
   {{-- @dd(public('test')) --}}
+
+  {{-- Note: url() -> website domain + website-route --}}
+  {{-- @dd(url('/edit-profile')) --}}
 
   <!-- Modal -->
   <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -37,7 +40,7 @@
           <h5 class="modal-title" id="exampleModalLabel">Edit Profil</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form>
+        <form action="{{ url('/edit-profile') }}" method="POST">
           <div class="modal-body">
             <div class="mb-3 profile-img-form">
               <img class="profile-img-form-preview" 
@@ -88,7 +91,9 @@
     </div>
   </div>
 
+  <!-- Main Content -->
   @include('template.profile_header')
+
   <div class="main-background">
     <img class="main-background-image" src="{{ asset('images/main-background-images.svg') }}" alt="">
   </div>
@@ -116,11 +121,35 @@
     <div class="col-8">
       <div class="empty-space"></div>
       <div class="profile-section">
-        hello world
-        @yield('content')
+        <div class="col-12 mini-navbar mb-2">
+          <a href="{{ route('profile-academy') }}">
+            <div class="mini-navbar-item @if ($active_bar === 'academy') active @endif">
+              Academy <span class="mini-navbar-item-number">6</span>
+            </div>
+          </a>
+          <a href="{{ route('profile-event') }}">
+            <div class="mini-navbar-item @if ($active_bar === 'event') active @endif">
+              Event <span class="mini-navbar-item-number">2</span>
+            </div>
+          </a>
+          <a href="{{ route('profile-challenge') }}">
+            <div class="mini-navbar-item @if ($active_bar === 'challenge') active @endif">
+              Challenge <span class="mini-navbar-item-number">1</span>
+            </div>
+          </a>
+          <a href="{{ route('profile-winning-app') }}">
+            <div class="mini-navbar-item @if ($active_bar === 'winning-app') active @endif">
+              Winning App
+            </div>
+          </a>
+        </div>
+        <div class="col-12">
+          @yield('content')
+        </div>
       </div>
     </div>
   </div>
+
   @include('template.profile_footer')
 </body>
 </html>
