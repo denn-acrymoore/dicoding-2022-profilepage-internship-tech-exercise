@@ -10,18 +10,21 @@
         Jawa Barat 40123<br>
     </div>
     <div class="horizontal-line"></div>
-    <div class="col-10 row">
-        <div class="col-3 dicoding-moto-text">
+    <div class="col-10 mb-4 bottom-footer">
+        <div class="col-3 p-0 dicoding-moto-text">
             Decode ideas, Discover Potential
         </div>
-        <div class="col-3 social-media-logo">
-            Logo
+        <div class="col-3 p-0 social-media-logo">
+            <img src="{{ asset('images/footer/instagram-logo.svg') }}">
+            <img src="{{ asset('images/footer/youtube-logo.svg') }}">
+            <img src="{{ asset('images/footer/twitter-logo.svg') }}">
+            <img src="{{ asset('images/footer/facebook-logo.svg') }}">
         </div>
-        <div class="col-3 dicoding-copyright-text">
+        <div class="col-4 p-0 dicoding-copyright-text">
             © Dicoding Indonesia 2021
         </div>
-        <div class="col-3 dicoding-term-privacy-text">
-            Term • Privacy
+        <div class="col-2 p-0 dicoding-term-privacy-text">
+            Term&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Privacy
         </div>
     </div>
 </div>

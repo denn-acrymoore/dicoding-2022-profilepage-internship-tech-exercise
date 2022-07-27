@@ -89,7 +89,9 @@
   </div>
 
   @include('template.profile_header')
-  <div class="main-background"></div>
+  <div class="main-background">
+    <img class="main-background-image" src="{{ asset('images/main-background-images.svg') }}" alt="">
+  </div>
   <div class="container-fluid profile-content">
     <div class="col-4 profile-card-container">
       <div class="profile-card">
@@ -97,9 +99,18 @@
         <span class="profile-card-name">Denn Sebastian</span>
         <span class="profile-card-headline">Product Engineer at Acme</span>
         <button class="edit-profile-btn" data-bs-toggle="modal" data-bs-target="#editProfileModal">Edit Profil</button>
-        <div class="profile-card-exp-container">800 XP</div>
-        <div class="profile-card-joindate-container">Bergabung sejak 2022</div>
-        <div class="profile-card-city-container">Kota Bandung</div>
+        <div class="profile-card-exp-container">
+          <img class="profile-card-icon" src="{{ asset('images/profile-card/card-xp-badge-icon.svg') }}" alt="">
+          800 XP
+        </div>
+        <div class="profile-card-joindate-container">
+          <img class="profile-card-icon" src="{{ asset('images/profile-card/clock-icon.svg') }}" alt="">
+          Bergabung sejak 2022
+        </div>
+        <div class="profile-card-city-container">
+          <img class="profile-card-icon" src="{{ asset('images/profile-card/location-icon.svg') }}" alt="">
+          Kota Bandung
+        </div>
       </div>
     </div>
     <div class="col-8">

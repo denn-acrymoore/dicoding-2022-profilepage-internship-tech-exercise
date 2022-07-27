@@ -21,3 +21,42 @@
     font-size: 0.9rem;
     color: rgb(106, 106, 106);
 }
+
+.dicoding-footer .bottom-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dicoding-footer .dicoding-moto-text {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgb(38, 38, 38);
+}
+
+.dicoding-footer .social-media-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dicoding-footer .social-media-logo img {
+    height: 16px;
+    margin-right: 2vw;
+}
+
+.dicoding-footer .dicoding-copyright-text {
+    font-size: 0.85rem;
+    text-align: right;
+    color: rgb(143, 143, 143);
+}
+
+.dicoding-footer .dicoding-term-privacy-text {
+    font-size: 0.85rem;
+    text-align: right; 
+    color: rgb(143, 143, 143);
+}

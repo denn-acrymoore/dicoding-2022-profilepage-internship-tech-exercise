@@ -6,6 +6,10 @@
     background-color: #033E5E;
 }
 
+.main-background-image {
+    float: right;
+}
+
 .profile-content {
     display: flex;
 }
@@ -78,20 +82,40 @@
     font-size: 0.8rem;
     text-align: justify;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .profile-content .profile-card-joindate-container {
-    margin-top: 3px;
+    margin-top: 7px;
     font-size: 0.8rem;
     text-align: justify;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .profile-card .profile-card-city-container {
-    margin-top: 3px;
+    margin-top: 7px;
     font-size: 0.8rem;
     text-align: justify;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-card .profile-card-icon {
+    margin-right: 10px;
+    width: 15px;
 }
 
 .profile-content .empty-space {
