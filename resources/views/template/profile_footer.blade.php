@@ -1,5 +1,5 @@
 <div class="dicoding-footer container-md">
-    <div class="horizontal-line"></div>
+    <div class="horizontal-line col-10"></div>
     <div class="col-10 mb-3">
         <img class="dicoding-logo" src="{{ asset('images/dicoding-header-logo.png') }}" alt="">
     </div>
@@ -9,7 +9,7 @@
         Kec. Cibeunying Kaler, Kota Bandung,<br>
         Jawa Barat 40123<br>
     </div>
-    <div class="horizontal-line"></div>
+    <div class="horizontal-line col-10"></div>
     <div class="col-10 mb-4 bottom-footer">
         <div class="col-3 p-0 dicoding-moto-text">
             Decode ideas, Discover Potential
