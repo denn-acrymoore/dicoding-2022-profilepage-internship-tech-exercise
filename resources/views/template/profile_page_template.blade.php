@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="{{ asset('css/profile_page_template/profile_page_header.css') }}">
   <link rel="stylesheet" href="{{ asset('css/profile_page_template/profile_page_content.css') }}">
   <link rel="stylesheet" href="{{ asset('css/profile_page_template/profile_page_footer.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/profile_pages/profile_page_academy.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/profile_pages/profile_page_event.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/profile_pages/profile_page_challenge.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/profile_pages/profile_page_winning_app.css') }}">
 
   <script src="{{ asset('js/profile_page.js') }}" defer></script>
   

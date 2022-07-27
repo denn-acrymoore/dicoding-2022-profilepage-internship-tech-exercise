@@ -138,7 +138,7 @@
     font-size: 0.8rem;
 }
 
-.profile-content a {
+.profile-content .mini-navbar a {
     width: 100%;
     max-width: 100px;
     text-decoration: none;

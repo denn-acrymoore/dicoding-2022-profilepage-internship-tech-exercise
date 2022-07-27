@@ -1,0 +1,53 @@
+.academy-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.academy-section .academy-card {
+    width: 45%;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.academy-section .academy-card-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    float: left;
+    margin-right: 5px;
+}
+
+.academy-section .academy-card-title {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.academy-section .academy-card-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+}
+
+.academy-section .academy-card-icon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.academy-section .academy-card-detail-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.academy-section .academy-card-detail-div:not(:last-child) {
+    margin-right: 15px;
+}
