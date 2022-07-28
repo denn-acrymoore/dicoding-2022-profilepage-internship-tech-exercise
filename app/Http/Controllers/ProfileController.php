@@ -50,22 +50,13 @@ class ProfileController extends Controller
         $imgPath = $request->file('profileImg')->store('database-images/profile-images');
         // ddd($path);
 
-        UserProfile::create([
-            'email' => 'denn.sebastian.e@gmail.com',
-            'nama' => $request->input('nama'),
-            'username' => $request->input('username'),
-            'headline' => $request->input('headline'),
-            'tentang_saya' => $request->input('tentang_saya'),
-            'image_path' => $imgPath
-        ]);
-
         // UserProfile::create([
         //     'email' => 'denn.sebastian.e@gmail.com',
-        //     'nama' => 'Denn Sebastian',
-        //     'username' => 'acrymoore',
-        //     'headline' => 'Dicoding Tech Engineer Intern',
-        //     'tentang_saya' => 'Suka programming dan belajar hal baru.',
-        //     'image_path' => "/database-images/profile-images/fbTxVJ0WXqsGOaxbkNja2KEqUor1ZlF0HFHUnXWD.jpg"
+        //     'nama' => $request->input('nama'),
+        //     'username' => $request->input('username'),
+        //     'headline' => $request->input('headline'),
+        //     'tentang_saya' => $request->input('tentang_saya'),
+        //     'image_path' => $imgPath
         // ]);
 
         return redirect()->back();
