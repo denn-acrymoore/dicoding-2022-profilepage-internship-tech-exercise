@@ -11,10 +11,14 @@
 
 ## Results (GIF):
 ### Display:
+![display_showcase_gif](https://drive.google.com/uc?export=view&id=12PlZ5EgXAI7FZr_d3MOQZ-vuteP-WcNf)
 
 ### Responsiveness:
+![responsiveness_showcase_gif](https://drive.google.com/uc?export=view&id=1RgAaVgGcAV0mlNZ2f0myhQpRfXm2qOaz)
 
 ### Profile Update Demo:
+** Note: Username yang telah digunakan = `tono24` dan `susi313`**  
+![form_showcase_gif](https://drive.google.com/uc?export=view&id=1HpnGRWUKqcZjgs0ZuR9YzuaGKYqLPRUz)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
