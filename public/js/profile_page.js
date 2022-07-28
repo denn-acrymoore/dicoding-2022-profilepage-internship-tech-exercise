@@ -18,9 +18,9 @@ function previewProfileImg(event) {
 
     // Free existing object URL which was previously created by calling 
     // URL.createObjectURL() after the image has been loaded.
-    // profileImgFormPreview.onload = function() {
-    //     URL.revokeObjectURL(profileImgFormPreview.src)
-    // }
+    profileImgFormPreview.onload = function() {
+        URL.revokeObjectURL(profileImgFormPreview.src)
+    }
 }
 
 function showModal() {
