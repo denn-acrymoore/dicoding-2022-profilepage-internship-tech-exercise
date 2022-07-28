@@ -3,7 +3,7 @@
 @section('title', 'Profile Page - Challenge')
 
 @section('content')
-challenge
+<div class="challenge-section col-12">
 
-
+</div>
 @endsection

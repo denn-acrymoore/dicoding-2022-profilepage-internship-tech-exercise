@@ -1,0 +1,14 @@
+.challenge-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.event-section .event-card {
+    width: 45%;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
