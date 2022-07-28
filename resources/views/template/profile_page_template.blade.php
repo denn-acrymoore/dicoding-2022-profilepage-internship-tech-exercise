@@ -24,7 +24,9 @@
   <script src="{{ asset('js/profile_page.js') }}" defer></script>
   
   {{-- Note: Call this JavaScript file to show modal when page is loaded. --}}
-  {{-- <script src="{{ asset('js/profile_page_show_modal.js') }}" defer></script> --}}
+  @if ($errors->any())
+    <script src="{{ asset('js/profile_page_show_modal.js') }}" defer></script>
+  @endif
 </head>
 <body>
   {{-- Note: asset() -> website domain + filename --}}
@@ -52,39 +54,73 @@
                 id="profile-img-form-preview"
                 src="{{ asset($profile_data->image_path) }}">
               <div class="profile-img-form-div">
-                <input class="form-control" type="file" accept="image/*" 
+                <input class="form-control @error('profileImg') is-invalid @enderror" 
+                  type="file" accept="image/*" 
                   id="profileImg" name="profileImg"
-                  onchange="previewProfileImg(event)">
+                  onchange="previewProfileImg(event)"
+                  required
+                >
                 <label for="profileImg" class="form-label">Gambar Profil Anda sebaiknya memiliki rasio 1:1 dan berukuran tidak lebih dari 2MB</label>
+                @error('profileImg')
+                  <div class="invalid-feedback">{{ $message }}</div>  
+                @enderror
               </div>
             </div>
             <div class="mb-3">
               <label for="nama" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="nama" 
-              name="nama" value="{{ $profile_data->nama }}">
+              <input type="text" 
+                class="form-control @error('nama') is-invalid @enderror" 
+                id="nama" name="nama" value="{{ $profile_data->nama }}"
+                required
+              >
+              @error('nama')
+                <div class="invalid-feedback">{{ $message }}</div>  
+              @enderror
             </div>
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
-              <input type="text" class="form-control" id="username" 
-              name="username" value="{{ $profile_data->username }}">
+              <input type="text" 
+                class="form-control @error('username') is-invalid @enderror" 
+                id="username" name="username" value="{{ $profile_data->username }}"
+                required
+                >
+              @error('username')
+                <div class="invalid-feedback">{{ $message }}</div>  
+              @enderror
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" 
-              name="email" value="{{ $profile_data->email }}" disabled>
+              <input type="email" 
+                class="form-control @error('email') is-invalid @enderror" 
+                id="email" name="email" value="{{ $profile_data->email }}" disabled
+              >
+              @error('email')
+                <div class="invalid-feedback">{{ $message }}</div>  
+              @enderror
             </div>
             <div class="mb-3">
               <label for="headline" class="form-label">Headline</label>
-              <input type="text" class="form-control" id="headline" 
-              name="headline" value="{{ $profile_data->headline }}">
+              <input type="text" 
+                class="form-control @error('headline') is-invalid @enderror" 
+                id="headline" name="headline" value="{{ $profile_data->headline }}"
+                required
+              >
+              @error('headline')
+                <div class="invalid-feedback">{{ $message }}</div>  
+              @enderror
               <div id="headlineHelp" class="form-text">Dapat diisi dengan title atau jabatan utama Anda.</div>
             </div>
             <div class="mb-3">
               <label for="tentang-saya" class="form-label">Tentang Saya 
                 <span id="tentang-saya-counter" class="tentang-saya-counter">0/100</span>
               </label>
-              <textarea class="form-control" id="tentang-saya" name="tentang-saya" 
-                rows="3" maxlength="100" onkeyup="textAreaCounter()">{{ $profile_data->tentang_saya }}</textarea>
+              <textarea class="form-control @error('tentang-saya') is-invalid @enderror" 
+                id="tentang-saya" name="tentang-saya" 
+                rows="3" maxlength="100" onkeyup="textAreaCounter()"
+                required>{{ $profile_data->tentang_saya }}</textarea>
+              @error('tentang-saya')
+                <div class="invalid-feedback">{{ $message }}</div>  
+              @enderror
               <div id="tentangSayaHelp" class="form-text">Tulis cerita singkat tentang diri Anda.</div>
             </div>
           </div>

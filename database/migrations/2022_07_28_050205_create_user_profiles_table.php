@@ -14,7 +14,7 @@ class CreateUserProfilesTable extends Migration
     public function up()
     {
         Schema::create('user_profiles', function (Blueprint $table) {
-            $table->string('email', 50)->unique();
+            $table->string('email', 100)->unique();
             $table->string('nama', 100);
             $table->string('username', 100)->unique();
             $table->string('headline', 100);

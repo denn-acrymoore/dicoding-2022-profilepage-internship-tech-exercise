@@ -207,3 +207,7 @@
 .modal .profile-img-form-div {
     margin-left: 20px;
 }
+
+.modal .invalid-feedback {
+    font-size: 0.7rem;
+}
