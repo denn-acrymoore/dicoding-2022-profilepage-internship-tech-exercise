@@ -1,3 +1,21 @@
+## How to Run the Project
+1. Install XAMPP, PHP (min version 7.3.0), and Composer.
+2. Download the code from this repository.
+3. Open CMD and working directory to the project's directory (`cd` command).
+4. Run `composer update` to download all required Laravel 8 files.
+5. Activate 'Apache' and 'MySQL' server in XAMPP.
+6. Create an empty database called `dicoding-2022-intern-test` (you may change this in the `.env` file).
+7. Run `php artisan migrate:fresh` to create the table required for this project.
+8. Run `php artisan db:seed` to add the starter data into that table.
+9. Run `php artisan serve` to run the project.
+
+## Results (GIF):
+### Display:
+
+### Responsiveness:
+
+### Profile Update Demo:
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
