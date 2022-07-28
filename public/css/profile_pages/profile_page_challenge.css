@@ -6,9 +6,76 @@
     justify-content: flex-start;
 }
 
-.event-section .event-card {
+.challenge-section .challenge-card {
     width: 45%;
     max-width: 300px;
     margin-right: 20px;
     margin-bottom: 15px;
+}
+
+.challenge-section .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.challenge-section .challenge-card-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 7px;
+    border-radius: 3%;
+}
+
+.challenge-section .challenge-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.challenge-section .challenge-organizer {
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+    color: rgb(143, 143, 143);
+}
+
+.challenge-section .challenge-status-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.challenge-section .challenge-status-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 15%;
+}
+
+.challenge-section .challenge-status-text {
+    font-size: 0.8rem;
+    color: rgb(143, 143, 143);
+}
+
+.challenge-section .challenge-link-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.challenge-section .challenge-link-text {
+    color: #3b82f6;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.challenge-section .challenge-link-arrow {
+    width: 10px;
+    height: 10px;
 }
