@@ -3,7 +3,11 @@
 @section('title', 'Profile Page - Winning App')
 
 @section('content')
-winning app
+<div class="winning-app-section col-12">
+  <div class="alert alert-warning" role="alert">
+    <span class="alert-message">Belum ada Winning App.</span>
+  </div>
+</div>
 
 
 @endsection

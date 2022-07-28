@@ -1,0 +1,13 @@
+.winning-app-section .alert {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.winning-app-section .alert-message {
+    font-size: 0.8rem;
+    text-align: center;
+}
