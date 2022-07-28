@@ -70,8 +70,12 @@
               <label for="nama" class="form-label">Nama Lengkap</label>
               <input type="text" 
                 class="form-control @error('nama') is-invalid @enderror" 
-                id="nama" name="nama" value="{{ $profile_data->nama }}"
-                required
+                id="nama" name="nama" required
+                @if (old('nama')) 
+                  value="{{ old('nama') }}"
+                @else
+                  value="{{ $profile_data->nama }}"
+                @endif
               >
               @error('nama')
                 <div class="invalid-feedback">{{ $message }}</div>  
@@ -81,9 +85,13 @@
               <label for="username" class="form-label">Username</label>
               <input type="text" 
                 class="form-control @error('username') is-invalid @enderror" 
-                id="username" name="username" value="{{ $profile_data->username }}"
-                required
-                >
+                id="username" name="username" required
+                @if (old('username')) 
+                  value="{{ old('username') }}"
+                @else
+                  value="{{ $profile_data->username }}"
+                @endif
+              >
               @error('username')
                 <div class="invalid-feedback">{{ $message }}</div>  
               @enderror
@@ -102,8 +110,12 @@
               <label for="headline" class="form-label">Headline</label>
               <input type="text" 
                 class="form-control @error('headline') is-invalid @enderror" 
-                id="headline" name="headline" value="{{ $profile_data->headline }}"
-                required
+                id="headline" name="headline" required
+                @if (old('headline')) 
+                  value="{{ old('headline') }}"
+                @else
+                  value="{{ $profile_data->headline }}"
+                @endif
               >
               @error('headline')
                 <div class="invalid-feedback">{{ $message }}</div>  
@@ -117,7 +129,8 @@
               <textarea class="form-control @error('tentang-saya') is-invalid @enderror" 
                 id="tentang-saya" name="tentang-saya" 
                 rows="3" maxlength="100" onkeyup="textAreaCounter()"
-                required>{{ $profile_data->tentang_saya }}</textarea>
+                required
+              >@if(old('tentang-saya')){{ old('tentang-saya') }}@else{{ $profile_data->tentang_saya }}@endif</textarea>
               @error('tentang-saya')
                 <div class="invalid-feedback">{{ $message }}</div>  
               @enderror
