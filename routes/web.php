@@ -26,3 +26,5 @@ Route::get('/profile-page/challenge', [ProfileController::class, 'profilePageCha
     ->name('profile-challenge');
 Route::get('/profile-page/winning-app', [ProfileController::class, 'profilePageWinningApp'])
     ->name('profile-winning-app');
+
+Route::post('/edit-profile', [ProfileController::class, 'editProfile']);

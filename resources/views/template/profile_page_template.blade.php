@@ -44,12 +44,13 @@
           <h5 class="modal-title" id="exampleModalLabel">Edit Profil</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="{{ url('/edit-profile') }}" method="POST">
+        <form action="{{ url('/edit-profile') }}" method="POST" enctype="multipart/form-data">
+          @csrf
           <div class="modal-body">
             <div class="mb-3 profile-img-form">
               <img class="profile-img-form-preview" 
                 id="profile-img-form-preview"
-                src="{{ asset('database-images/gigachad.jpg') }}">
+                src="{{ asset($profile_data->image_path) }}">
               <div class="profile-img-form-div">
                 <input class="form-control" type="file" accept="image/*" 
                   id="profileImg" name="profileImg"
@@ -60,22 +61,22 @@
             <div class="mb-3">
               <label for="nama" class="form-label">Nama Lengkap</label>
               <input type="text" class="form-control" id="nama" 
-              name="nama" value="Denn Sebastian">
+              name="nama" value="{{ $profile_data->nama }}">
             </div>
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
               <input type="text" class="form-control" id="username" 
-              name="username" value="acrymoore">
+              name="username" value="{{ $profile_data->username }}">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" 
-              name="email" value="denn.sebastian.e@gmail.com">
+              name="email" value="{{ $profile_data->email }}" disabled>
             </div>
             <div class="mb-3">
               <label for="headline" class="form-label">Headline</label>
               <input type="text" class="form-control" id="headline" 
-              name="headline" value="Dicoding Tech Engineer Intern">
+              name="headline" value="{{ $profile_data->headline }}">
               <div id="headlineHelp" class="form-text">Dapat diisi dengan title atau jabatan utama Anda.</div>
             </div>
             <div class="mb-3">
@@ -83,7 +84,7 @@
                 <span id="tentang-saya-counter" class="tentang-saya-counter">0/100</span>
               </label>
               <textarea class="form-control" id="tentang-saya" name="tentang-saya" 
-                rows="3" maxlength="100" onkeyup="textAreaCounter()">Suka programming dan belajar hal baru.</textarea>
+                rows="3" maxlength="100" onkeyup="textAreaCounter()">{{ $profile_data->tentang_saya }}</textarea>
               <div id="tentangSayaHelp" class="form-text">Tulis cerita singkat tentang diri Anda.</div>
             </div>
           </div>
@@ -104,9 +105,9 @@
   <div class="container-fluid profile-content">
     <div class="col-4 profile-card-container">
       <div class="profile-card">
-        <img class="profile-card-avatar" src="{{ asset('database-images/gigachad.jpg') }}">
-        <span class="profile-card-name">Denn Sebastian</span>
-        <span class="profile-card-headline">Product Engineer at Acme</span>
+        <img class="profile-card-avatar" src="{{ asset($profile_data->image_path) }}">
+        <span class="profile-card-name">{{ $profile_data->nama }}</span>
+        <span class="profile-card-headline">{{ $profile_data->headline }}</span>
         <button class="edit-profile-btn" data-bs-toggle="modal" data-bs-target="#editProfileModal">Edit Profil</button>
         <div class="profile-card-exp-container">
           <img class="profile-card-icon" src="{{ asset('images/profile-card/card-xp-badge-icon.svg') }}" alt="">

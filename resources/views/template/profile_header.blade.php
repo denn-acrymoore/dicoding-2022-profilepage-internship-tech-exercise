@@ -15,7 +15,7 @@
   <div class="col-7 dicoding-navbar-col-align-right">
     <div class='avatar-dropdown'>
       <div class="avatar-dropbtn">
-        <img class="avatar-img" src="{{ asset('database-images/gigachad.jpg') }}" >
+        <img class="avatar-img" src="{{ asset($profile_data->image_path) }}" >
         <img class="caret-dropdown" src="{{ asset('images/header/caret_icon.svg') }}" />
       </div>
       <div class="avatar-dropdown-content">
